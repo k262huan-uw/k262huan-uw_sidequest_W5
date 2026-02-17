@@ -7,8 +7,8 @@
     "gridStep": 160
   },
   "playerStart": {
-    "x": 300,
-    "y": 300,
+    "x": 40,
+    "y": 40,
     "speed": 3
   },
   "obstacles": [
