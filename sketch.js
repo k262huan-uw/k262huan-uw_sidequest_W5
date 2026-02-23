@@ -53,8 +53,8 @@ function draw() {
   const maxCamY = max(0, level.h - height);
 
   // Center camera on player, then clamp to legal camera range.
-  camX = constrain(player.x - width / 2, 0, maxCamX);
-  camY = constrain(player.y - height / 2, 0, maxCamY);
+  camX = lerp(camX, constrain(player.x - width / 2, 0, maxCamX), 0.02);
+  camY = lerp(camY, constrain(player.y - height / 2, 0, maxCamY), 0.02);
 
   // --- draw ---
   level.drawBackground();
